@@ -1,0 +1,12 @@
+
+<resources>
+<dimen name="default_margin">20dp</dimen>
+<dimen name="first_layout_height">30dp</dimen>
+<dimen name="second_layout_height">20dp</dimen>
+<dimen name="third_margin">20dp</dimen>
+<dimen name="wbt">210dp</dimen>
+<dimen name="hmarge">80dp</dimen>
+<dimen name="hstart">110dp</dimen>
+
+
+</resources>

@@ -1,0 +1,253 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/main_bg"
+    android:weightSum="10"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/top_bg_cut"
+        android:layout_weight="1.2" >
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:text="Cut Video" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/transparent_bg"
+        android:layout_weight="0.3" >
+    </RelativeLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+        </RelativeLayout>
+     <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="10" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+        </RelativeLayout>
+    <TextView
+        android:id="@+id/textfilename"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+                    android:layout_weight="9.2"
+        
+        android:layout_gravity="center_horizontal"
+        android:lines="1"
+        android:marqueeRepeatLimit="marquee_forever"
+        android:text="gdfgdgfdg"
+        android:gravity="center"
+        android:background="@drawable/textvi_bg"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+      <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+        </RelativeLayout>
+    </LinearLayout>
+
+      <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.4" >
+        </RelativeLayout>
+    </LinearLayout>
+
+      <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/transparent_bg"
+        android:layout_weight="0.3" >
+    </RelativeLayout>
+    
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="4.7"  >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+		<RelativeLayout
+ 			android:layout_width="0dp"
+            android:layout_weight="9.2"
+            android:padding="7dp"
+            android:background="@drawable/video_border"
+            android:layout_height="match_parent" >
+
+			<VideoView
+			    android:id="@+id/videoView1"
+			    android:layout_width="fill_parent"
+			    android:layout_height="fill_parent"
+			    android:layout_alignParentBottom="true"
+				android:layout_alignParentTop="true"
+				android:layout_alignParentRight="true"
+				android:layout_alignParentLeft="true"
+			    android:layout_centerVertical="true" />
+
+			<Button
+			    android:id="@+id/buttonply"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerHorizontal="true"
+			    android:layout_centerVertical="true"
+			    android:background="@drawable/play"
+			   />
+
+        </RelativeLayout>
+        <RelativeLayout
+ 			android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="0dp"
+         android:background="@drawable/transparent_bg"
+        android:layout_weight="0.3" >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:weightSum="10"
+        android:layout_weight="1.5"  >
+                <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+		<LinearLayout
+ 			android:layout_width="0dp"
+            android:layout_weight="9.2"
+            android:orientation="vertical"
+            android:weightSum="6"
+            android:background="@drawable/seeckbar_bg"
+            android:layout_height="match_parent" >
+
+		
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="0dp"
+        android:layout_weight="4" >
+        <com.video.trimmercutter.view.VideoSliceSeekBar
+				    android:id="@+id/seek_bar"
+				    android:layout_width="match_parent"
+				    android:layout_height="wrap_content"
+				    android:layout_centerInParent="true"
+				    android:padding="@dimen/default_margin" />
+        
+    </RelativeLayout>
+        <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="0dp"
+        android:layout_weight="2" >
+
+				<TextView
+				    android:id="@+id/left_pointer"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    				    android:layout_marginLeft="7dp"
+				   android:layout_alignParentLeft="true"
+				   android:layout_centerVertical="true"
+				    				    android:text="--" />
+
+
+		
+				
+
+
+				<TextView
+				    android:id="@+id/right_pointer"
+				    android:layout_width="wrap_content"
+				    android:layout_height="wrap_content"
+				    android:layout_marginRight="7dp"
+				    android:layout_alignParentRight="true"
+				    				   android:layout_centerVertical="true"
+
+				    android:text="--" />
+				</RelativeLayout>
+			
+
+        </LinearLayout>
+        <RelativeLayout
+ 			android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+                android:background="@drawable/transparent_bg"
+        android:layout_weight="0.3"  >
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+       android:layout_height="0dp"
+       android:weightSum="10"
+        android:layout_weight="1.1" >
+                <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+		<Button
+		    android:id="@+id/trimbut"
+ 			android:layout_width="0dp"
+            android:layout_weight="9.2"
+            android:background="@drawable/cut"
+            android:layout_height="match_parent"
+              android:textColor="@color/bt_text"
+			    android:textSize="24dp"
+			    
+			    android:text="Cut" ></Button>
+        <RelativeLayout
+ 			android:layout_width="0dp"
+            android:layout_weight="0.4"
+            android:layout_height="match_parent" >
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+         android:layout_height="0dp"
+                 android:background="@drawable/transparent_bg"
+        android:layout_weight="0.3"  >
+    </RelativeLayout>
+
+</LinearLayout>

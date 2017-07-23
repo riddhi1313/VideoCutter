@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="20dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp" >
+
+    <FrameLayout
+        android:id="@+id/frameVidelistPlay"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#f35f5f"
+        android:padding="2dp" >
+
+        <ImageView
+            android:id="@+id/ivVideolistImage"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/videolist_name_bg"
+            android:gravity="center" >
+
+            <TextView
+                android:id="@+id/tvVideolistname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnVidelistPlay"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/play" />
+    </FrameLayout>
+
+</LinearLayout>

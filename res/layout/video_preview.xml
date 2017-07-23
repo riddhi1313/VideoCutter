@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+              
+      >
+      
+
+       <RelativeLayout
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_margin="12dp"
+            
+            android:background="@drawable/video_frame"
+            android:padding="5dp" >
+
+            <ImageView
+                android:id="@+id/image_preview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+              />
+
+        </RelativeLayout>
+
+	    
+	    <LinearLayout android:orientation="vertical" android:layout_width="match_parent" android:layout_height="match_parent"
+	       android:gravity="center_vertical"
+	       
+	        >
+	    	<TextView android:id="@+id/file_name" android:layout_width="wrap_content" android:layout_height="wrap_content"
+	    	    android:gravity="clip_vertical"
+	    	    android:textColor="@android:color/white"
+	    	    android:text="sdffsfsdfsf"
+	    	    android:lines="3"
+	    	    android:textSize="15dp"/>
+	    	
+	    		    	<TextView android:id="@+id/duration" android:layout_width="wrap_content" android:layout_height="wrap_content" 
+	    		    	    android:layout_marginTop="10dp"
+	    		    	    android:gravity="clip_vertical"
+	    		    	    android:text="hhhhhhhdddddddddddjjjjjjjjjjjjjjjjjj"
+	    		    	    android:textColor="@android:color/white"
+	    		    	    android:textSize="12dp" ></TextView>
+	    	
+        </LinearLayout>
+
+
+</LinearLayout>
